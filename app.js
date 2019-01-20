@@ -14,7 +14,7 @@ app.get("/:id", (req, res) => {
       url +
       " -p " +
       downloadsFolder() +
-      "/SMLoadrDonwloads",
+      "/SMLoadrDonwloads -q MP3_128",
     () => console.log("downoaded")
   );
   console.log("downoaded");
