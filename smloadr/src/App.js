@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import NavBar from "./components/NavBar";
+import Search from "./components/Search";
 
 class App extends Component {
   constructor(props) {
@@ -21,16 +23,10 @@ class App extends Component {
   }
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
-        <label>
-          <input
-            type="text"
-            value={this.state.value}
-            onChange={this.handleChange}
-          />
-        </label>
-        <input type="submit" value="Submit" />
-      </form>
+      <div>
+        <NavBar />
+        <Search />
+      </div>
     );
   }
 }
